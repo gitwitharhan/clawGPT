@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Outfit", system-ui, -apple-system, sans-serif;
+  --color-primary: #8b5cf6;
+  --color-secondary: #ec4899;
+}
+
+body {
+  @apply bg-slate-900 text-slate-100 font-sans;
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-slate-800/40 backdrop-blur-md border border-slate-700/50 shadow-xl;
+  }
+}
